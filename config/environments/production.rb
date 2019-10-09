@@ -10,8 +10,8 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
-  #action_mailer
-  config.action_mailer.delivery_method = :smpt
+  # Action_mailer
+  config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: 'photo-app-mpereira.herokuapp.com', protocol: 'http' }
 
   # Full error reports are disabled and caching is turned on.
