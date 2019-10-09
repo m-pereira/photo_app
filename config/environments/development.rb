@@ -9,6 +9,10 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  #action_mailer
+  config.action_mailer.delivery_method = :test
+  config.action_mailer.default_url_options = { host: 'localhost:3000', protocol: 'http' }
+
   # Show full error reports.
   config.consider_all_requests_local = true
 
