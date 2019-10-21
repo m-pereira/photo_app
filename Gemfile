@@ -11,16 +11,18 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0.0'
 gem 'sass-rails', '~> 5'
+gem 'stripe'
 gem 'turbolinks', '~> 5'
 gem 'twitter-bootstrap-rails'
 gem 'webpacker', '~> 4.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'dotenv-rails'
   gem 'factory_bot_rails'
+  gem 'pry-rails'
   gem 'rspec-rails', '~> 3.8'
   gem 'shoulda-matchers'
-  gem 'pry-rails'
 end
 
 group :development do
